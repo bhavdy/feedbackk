@@ -1,0 +1,134 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Feedback Form Container */
+.feedback-container {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Max width for larger screens */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Star Rating */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.rating span {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.rating span.active {
+  color: #f59e0b;
+}
+
+.rating span.inactive {
+  color: #d1d5db;
+}
+
+/* Textarea (Fixed width issue) */
+textarea {
+  width: 100%; /* Full width inside the container */
+  min-height: 80px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box; /* Prevents overflow */
+}
+
+textarea:focus {
+  border-color: #3b82f6;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #000;
+}
+
+.post-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.post-btn.disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .feedback-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .rating span {
+    font-size: 25px;
+    margin: 0 3px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #61dafb;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #21a1f1;
+}
+
+.about-section {
+  display: flex; /* Changed from default block layout to flexbox */
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.text-container {
+  flex: 1; /* This ensures the text takes up available space */
+  max-width: 50%; /* Adjusts the text size */
+}
+
+.company-photo {
+  max-width: 40%; /* Adjusts the image size */
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Swaps the order of the elements (image on the left, text on the right) */
+.about-section {
+  flex-direction: row-reverse; /* This swaps the positions of the image and text */
+}
