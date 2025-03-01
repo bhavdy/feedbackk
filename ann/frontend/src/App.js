@@ -5,7 +5,7 @@ import FeedbackForm from "./FeedbackForm";
 import "./App.css";
 
 function App() {
-  const feedbackURL = "http://192.168.209.216:3000/FeedbackForm"; // Ensure correct IP format
+  const feedbackURL = ` 192.168.203.159:3000/feedbackform`; // Auto-detects base URL
 
   return (
     <Router>
@@ -24,7 +24,7 @@ function App() {
           />
 
           {/* Feedback Page */}
-          <Route path="/FeedbackForm" element={<FeedbackForm />} />
+          <Route path="/feedbackform" element={<FeedbackForm />} />
         </Routes>
       </div>
     </Router>
